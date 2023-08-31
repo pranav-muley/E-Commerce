@@ -1,10 +1,10 @@
 // import {useEffect } from 'react'
 import './App.css'
 import Nav from "./Component/Nav";
-// import ProductDetail from "./Component/ProductDetail";
-// import AddProduct from "./Component/AddProduct";
-// import CartItems from "./Component/CartItems";
-// import ProductItemList from "./Component/ProductItemList";
+import ProductDetail from "./Component/ProductDetail";
+import AddProduct from "./Component/AddProduct";
+import CartItems from "./Component/CartItems";
+import ProductItemList from "./Component/ProductItemList";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { addproducts } from "./actions/index";
