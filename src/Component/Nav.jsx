@@ -76,7 +76,7 @@ const Nav = () => {
 }
 const style = {
     nav: {
-      backgroundColor: "var(--nav)",
+      backgroundColor: "gray",
     },
     navHead: {
       fontFamily: "var(--fontStyle)",
