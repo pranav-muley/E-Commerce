@@ -30,9 +30,10 @@ const Nav = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item mx-5">
-              <Link to="/" className="nav-link active text-light" href="#">
+            <Link to="/" className="nav-link active text-light">
                 Products
-              </Link>
+            </Link>
+
             </li>
             <li className="nav-item">
               <Link to="/addproducts" className="nav-link active text-light">
