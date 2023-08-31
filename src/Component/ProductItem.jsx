@@ -99,7 +99,7 @@ export default function ProductItem({ item }) {
             <input
               type="text"
               value={title}
-              className="w-50"
+              className="w-50 noback"
               onChange={(e) => settitle(e.target.value)}
             ></input>
           )}
@@ -109,7 +109,7 @@ export default function ProductItem({ item }) {
             <input
               type="text"
               value={price}
-              className="w-50"
+              className="w-50 noback"
               onChange={(e) => setprice(e.target.value)}
             ></input>
           )}
@@ -118,7 +118,7 @@ export default function ProductItem({ item }) {
           ) : (
             <div>
               <h5>Ratings:</h5>
-              <input
+              <input className="noback"
                 type="number"
                 max={"5"}
                 min={"0"}
@@ -154,7 +154,6 @@ export default function ProductItem({ item }) {
             className="btn btn-primary"
             style={{
               width: "9rem",
-              backgroundColor: "",
             }}
             onClick={() => handleCart(item)}
           >
@@ -173,22 +172,13 @@ export default function ProductItem({ item }) {
         {item.edit ? (
           <>
             <span>
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/3196/3196909.png"
-                alt="error"
-                width={"30rem"}
-                style={{ cursor: "pointer" }}
-                onClick={() => handleEdit(item)}
-              />
+            <i class="fa-solid fa-pen-to-square" width={"30rem"} style={{ cursor: "pointer" }}
+                onClick={() => handleEdit(item)}></i>
             </span>
             <span>
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/8556/8556073.png"
-                alt="error"
-                width={"30rem"}
-                style={{ cursor: "pointer" }}
-                onClick={() => handleDelelteProduct(item)}
-              />
+            <i class="fa-regular fa-trash-can" width={"30rem"}style={{ cursor: "pointer" }}
+                onClick={() => handleDelelteProduct(item)}></i>
+                
             </span>
           </>
         ) : (

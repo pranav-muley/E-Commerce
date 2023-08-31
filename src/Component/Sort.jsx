@@ -25,7 +25,7 @@ export default function Sort() {
         style={style}
       >
         <span className="fw-bold " onClick={() => handleSort()}>
-          Sort by Price
+            <i class="fa-solid fa-arrow-up-wide-short">sort</i>
         </span>
         {flag && (
           <span>

@@ -12,8 +12,9 @@ const Nav = () => {
       style={style.nav}
     >
       <div className="container-fluid">
-        <a className="navbar-brand fs-3" href="#" style={style.navHead}>
-          E-commerce
+        <img width={50} style={{borderRadius:"70%"}} src="https://static.vecteezy.com/system/resources/thumbnails/023/177/445/small/mall-logo-is-marketing-shopping-sales-business-and-company-logo-on-white-background-illustration-vector.jpg" alt="" />
+        <a className="navbar-brand fs-3" href="#" style={{color:"floralwhite"}}>
+          <h2 className="mt-3">Central Super Mall</h2> 
         </a>
         <button
           className="navbar-toggler"
@@ -28,7 +29,7 @@ const Nav = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+            <li className="nav-item mx-5">
               <Link to="/" className="nav-link active text-light" href="#">
                 Products
               </Link>
@@ -41,7 +42,7 @@ const Nav = () => {
           </ul>
           <div className="d-flex gap-5 position-relative">
             <img
-              src="https://cdn-icons-png.flaticon.com/512/4290/4290854.png"
+              src="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_1280.png"
               alt="error"
               width={"40rem"}
             onClick={() => navigate("/cart")}
@@ -63,9 +64,10 @@ const Nav = () => {
               ""
             )}
             <img
-              src="https://cdn-icons-png.flaticon.com/512/236/236832.png"
+              src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=-mUWsTSENkugJ3qs5covpaj-bhYpxXY-v9RDpzsw504="
               alt="error"
               width={"40rem"}
+              style={{filter:"invert(100%)"}}
             />
           </div>
         </div>
